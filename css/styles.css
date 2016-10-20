@@ -1,3 +1,7 @@
-#equilateral, #isosceles {
+#equilateral {
+  display: none;
+} 
+
+#isosceles {
   display: none;
 }
