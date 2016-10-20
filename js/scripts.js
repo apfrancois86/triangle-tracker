@@ -1,4 +1,9 @@
 //business logic
+var equilateral = function(side1,side2,side3){
+  if (side1Input === side2Input && side2Input === side3Input)
+  return true;
+}
+
 
 //front end logic
 $(document).ready(function(){
@@ -8,11 +13,19 @@ $(document).ready(function(){
     var side2Input = parseInt($("input#side2").val());
     var side3Input = parseInt($("input#side3").val());
 
-    if (side1Input === side2Input && side2Input === side3Input) {
+    if (equilateral = true) {
       $("#equilateral").show();
     }
+
+
 
     event.preventDefault();
   });
 
 });
+
+// if (side1Input === side2Input && side2Input === side3Input) {
+//   $("#equilateral").show();
+// } else if (side1Input === side2Input || side2Input === side3Input || side1Input === side3Input) {
+//   $("#isosceles").show();
+// }
